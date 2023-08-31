@@ -1,0 +1,57 @@
+using System;    
+using System.Data;
+using System.Data.SqlClient;
+
+namespace EmployeeFilterApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string connectionString = "your_connection_string_here"; // Replace with your actual connection string
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                // Filter employees with type "CONTRACTOR"
+                string filterQuery = "SELECT * FROM EMPLOYEES WHERE EMPLOYEE_TYPE = 'CONTRACTOR'";  
+                SqlCommand filterCommand = new SqlCommand(filterQuery, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(filterCommand);
+                DataTable filteredTable = new DataTable();
+                adapter.Fill(filteredTable);
+
+                // Check end date and update status
+                foreach (DataRow row in filteredTable.Rows)
+                {
+                    DateTime endDate = (DateTime)row["END_DATE"];
+                    TimeSpan timeUntilEnd = endDate - DateTime.Today;
+
+                    if (timeUntilEnd <= TimeSpan.FromDays(18 * 30)) // 18 months
+                    {
+                        row["STATUS"] = "PASSED";
+                    }
+                    else
+                    {
+                        row["STATUS"] = "FAILED";
+                    }
+                }
+
+                // Assuming there's a column named "STATUS" in the DataTable to store the result
+
+                // Update the database with the modified DataTable
+                string updateQuery = "UPDATE EMPLOYEES SET STATUS = @Status WHERE EMPLOYEE_ID = @EmployeeID";
+                SqlCommand updateCommand = new SqlCommand(updateQuery, connection);
+                updateCommand.Parameters.Add("@Status", SqlDbType.VarChar);
+                updateCommand.Parameters.Add("@EmployeeID", SqlDbType.Int);
+
+                foreach (DataRow row in filteredTable.Rows)
+                {
+                    updateCommand.Parameters["@Status"].Value = row["STATUS"];
+                    updateCommand.Parameters["@EmployeeID"].Value = row["EMPLOYEE_ID"];
+                    updateCommand.ExecuteNonQuery();
+                }
+            }
+        }
+    }
+}
