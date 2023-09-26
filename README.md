@@ -2,7 +2,7 @@
 
 <a href="<Packtpub book link>?utm_source=github&utm_medium=repository&utm_campaign=<13-P ISBN>"><img src="https://m.media-amazon.com/images/I/71JqiPXaWdL._SY466_.jpg" alt="Practical Data Quality" height="256px" align="right"></a>
 
-This is the code repository for [Practical Data QUality](<Packtpub book link>?utm_source=github&utm_medium=repository&utm_campaign=<13-P ISBN>), published by Packt.
+This is the code repository for [Practical Data Quality](<Packtpub book link>?utm_source=github&utm_medium=repository&utm_campaign=<13-P ISBN>), published by Packt.
 
 **Learn practical, real-world strategies to transform the quality of data in your organization**
 
