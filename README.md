@@ -23,26 +23,8 @@ If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1804
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" alt="https://www.packtpub.com/" border="5" /></a>
 
-## Instructions and Navigations
-All of the code is organized into folders.
-
-The code will look like the following:
-```
-<Any code block from the book>
-
-```
-
 **Following is what you need for this book:**
 This book is for data analysts, data engineers, and chief data officers looking to understand data quality practices and their implementation in their organization. This book will also be helpful for business leaders who see data adversely affecting their success and data teams that want to optimize their data quality approach. No prior knowledge of data quality basics is required.	
-
-With the following software and hardware list you can run all code files present in the book (Chapter 1-10).
-
-### Software and Hardware List
-
-| Chapter  | Software required                                                                    | OS required                        |
-| -------- | -------------------------------------------------------------------------------------| -----------------------------------|
-|  1-10		 |   							                                            			  | Windows, Mac OS X, and Linux (Any) |
-
 
 ### Related products <Other books you may enjoy>
 * Principles of Data Fabric [[Packt]](https://www.packtpub.com/product/principles-of-data-fabric/9781804615225) [[Amazon]](https://www.amazon.com/dp/1804615226)
