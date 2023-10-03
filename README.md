@@ -33,9 +33,7 @@ This book is for data analysts, data engineers, and chief data officers looking 
 
 * Data Literacy in Practice [[Packt]](https://www.packtpub.com/product/data-literacy-in-practice/9781803246758) [[Amazon]](https://www.amazon.com/dp/1803246758)
 
-## Get to Know the Authors
+## Get to Know the Author
 **Robert Hawker** has worked in Data and Analytics within household name end user organisations since 2007. Rob has worked in a range of industries in both hands on and leadership roles, covering areas such as master data management, data quality, metadata management and data visualisation. Rob has established new data and analytics teams as the first employee and implemented new methodologies to drive success for his employers. Rob started his career as a chartered accountant – an experience which has proven very valuable when engaging with business people.
 
-
-**Miles Reah** has over 7 years' experience of data governance during his time as a consultant for a range of clients across major industries. Miles has built up extensive knowledge of data quality during this time working on projects in this area. He has seen the power of data quality and has experience of implementing data quality frameworks, policies, controls in a variety of situations.	
 
